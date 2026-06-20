@@ -4,7 +4,6 @@ Digital Nurture Assignment
 
 
 - [x] Design Pattern
-- [] PL/SQL
+- [ ] PL/SQL
 
-kk
 
