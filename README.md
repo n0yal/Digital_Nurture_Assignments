@@ -3,7 +3,10 @@ Digital Nurture Assignment
 
 
 
-- [x] Design Pattern
-- [ ] PL/SQL
+- [x] Week 1
+- [x] Week 2
+- [x] Week 3
+- [x] Week 4
+- [x] Week 5
 
 
