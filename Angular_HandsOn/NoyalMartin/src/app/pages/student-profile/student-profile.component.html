@@ -1,0 +1,17 @@
+<div class="profile-container">
+  <h2>My Profile</h2>
+  <div class="profile-card">
+    <p><strong>Name:</strong> Noyal Martin</p>
+    <p><strong>Student ID:</strong> STU-2024001</p>
+    <p><strong>Email:</strong> noyal@example.com</p>
+    <p><strong>Department:</strong> Computer Science</p>
+  </div>
+
+  <h3>Enrolled Courses</h3>
+  <div *ngIf="enrolledCourses.length === 0">You haven't enrolled in any courses yet.</div>
+  <ul *ngIf="enrolledCourses.length > 0">
+    <li *ngFor="let c of enrolledCourses">
+      {{ c.code }} - {{ c.name }}
+    </li>
+  </ul>
+</div>

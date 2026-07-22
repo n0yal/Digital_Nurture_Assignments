@@ -1,0 +1,74 @@
+.home-container {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+h1 {
+  color: #1a237e;
+  margin-bottom: 0.5rem;
+}
+.search-input {
+  width: 100%;
+  padding: 0.6rem;
+  margin: 0.5rem 0 0.25rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+.search-text {
+  color: #555;
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+.welcome-text {
+  color: #444;
+  line-height: 1.6;
+}
+.stats-row {
+  display: flex;
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+.stat-card {
+  flex: 1;
+  background: #f5f5f5;
+  padding: 1.2rem;
+  border-radius: 8px;
+  text-align: center;
+}
+.stat-number {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #1a237e;
+  margin: 0.3rem 0 0;
+}
+.actions {
+  margin-top: 1rem;
+  display: flex;
+  gap: 0.8rem;
+}
+.btn-primary {
+  background: #1a237e;
+  color: white;
+  border: none;
+  padding: 0.7rem 1.2rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.btn-primary:disabled {
+  background: #aaa;
+  cursor: not-allowed;
+}
+.btn-secondary {
+  background: #ffd740;
+  color: #333;
+  padding: 0.7rem 1.2rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 500;
+}
+.message {
+  margin-top: 1rem;
+  color: #2e7d32;
+  font-weight: 500;
+}

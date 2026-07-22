@@ -1,0 +1,38 @@
+<div class="home-container">
+  <!-- interpolation example -->
+  <h1>{{ portalName }}</h1>
+
+  <!-- two-way binding example -->
+  <input type="text" [(ngModel)]="searchTerm" (keydown.enter)="onSearchClick()" placeholder="Search courses..." class="search-input" />
+  <!-- [(ngModel)] is two-way shorthand for [ngModel]='searchTerm' (ngModelChange)='searchTerm=$event' -->
+  <p class="search-text">Searching for: {{ searchTerm }}</p>
+
+  <p class="welcome-text">Welcome to your course management system. Browse courses, enroll, and track your progress.</p>
+
+  <!-- stats row reading live count from service -->
+  <div class="stats-row">
+    <div class="stat-card">
+      <h3>Courses Available</h3>
+      <p class="stat-number">{{ coursesCount }}</p>
+    </div>
+    <div class="stat-card">
+      <h3>Enrolled</h3>
+      <p class="stat-number">3</p>
+    </div>
+    <div class="stat-card">
+      <h3>GPA</h3>
+      <p class="stat-number">3.8</p>
+    </div>
+  </div>
+
+  <!-- property & event binding examples -->
+  <div class="actions">
+    <button [disabled]="!isPortalActive" (click)="onEnrollClick()" class="btn-primary">
+      Enroll Now
+    </button>
+    <a routerLink="/courses" class="btn-secondary">Browse Courses</a>
+  </div>
+  <p *ngIf="message" class="message">{{ message }}</p>
+
+  <app-course-summary-widget></app-course-summary-widget>
+</div>
